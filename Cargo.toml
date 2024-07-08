@@ -1,0 +1,13 @@
+[package]
+name = "api-backend"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+bcrypt = "0.15.1"
+rocket = {version= "0.5.1",features = ["json"] }
+serde = "1.0.203"
+serde_json = "1.0.120"
+dotenv = "0.15.0"
+sqlx = { version = "0.7", features = ["runtime-tokio", "tls-native-tls", "postgres"] }
+tokio = { version = "1", features = ["full"] }
